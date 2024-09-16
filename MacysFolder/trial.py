@@ -1,4 +1,0 @@
-#macy
-#yeechyi
-#sitti
-#hello
