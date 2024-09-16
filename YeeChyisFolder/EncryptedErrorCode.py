@@ -1,4 +1,3 @@
-text = """
 tybony_inevnoyr = 100
 zl_qvpg = {'xrl1': 'inyhr1', 'xrl2': 'inyhr2', 'xrl3': 'inyhr3'}
 
@@ -40,22 +39,3 @@ vs 5 abg va zl_qvpg:
 cevag(tybony_inevnoyr)
 cevag(zl_qvpg)
 cevag(zl_qvpg)
-"""
-
-
-def decrypt(text, shift):
-    decrypted_text = ""
-    for char in text:
-        if char.isalpha():
-            shifted = ord(char) - shift
-            if char.islower():
-                if shifted < ord('a'):
-                    shifted += 26
-            elif char.isupper():
-                if shifted < ord('A'):
-                    shifted += 26
-            decrypted_text += chr(shifted)
-        else:
-            decrypted_text += char
-        return decrypted_text
-    

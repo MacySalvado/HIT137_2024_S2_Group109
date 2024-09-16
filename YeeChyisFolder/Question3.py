@@ -14,3 +14,5 @@ while counter < 5:
         total -= 1
     else:
         counter += 2
+        
+print(total) # total = 13
