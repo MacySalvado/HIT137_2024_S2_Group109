@@ -17,7 +17,3 @@ def encrypt(text, key):
         else:
             encrypted_text += char
     return encrypted_text
-
-key = ????????????????
-encrypted_code = encrypt(original_code, key)
-print(encrypted_code)
