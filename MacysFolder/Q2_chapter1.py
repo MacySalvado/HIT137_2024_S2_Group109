@@ -2,8 +2,6 @@ import time
 from PIL import Image
 import os
 
-# Set the working directory to the folder containing your files
-os.chdir("C:\\Users\\glend\\Downloads\\HIT137\\ass 2\\HIT137_2024_S2_Group109\\MacysFolder")
 
 # Generate the number using the provided code
 current_time = int(time.time())
