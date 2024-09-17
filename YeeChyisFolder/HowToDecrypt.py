@@ -1,5 +1,21 @@
-text = """
-tybony_inevnoyr = 100
+def decrypt(text, key):
+    decrypted_text = ""  # Initialise an empty string for the decrypted text
+    for char in text:  # Loop through each character in the encrypted text
+        if char.isalpha():  # Check if it's an alphabetic character
+            shifted = ord(char) - key  # Subtract the key value from the ASCII value
+            if char.islower():
+                if shifted < ord('a'):  # Wrap around if it's below 'a'
+                    shifted += 26
+            elif char.isupper():
+                if shifted < ord('A'):  # Wrap around if it's below 'A'
+                    shifted += 26
+            decrypted_text += chr(shifted)  # Convert ASCII back to character
+        else:
+            decrypted_text += char  # Keep non-alphabet characters the same
+    return decrypted_text
+
+# Now decrypt the encrypted code you provided
+encrypted_code = """tybony_inevnoyr = 100
 zl_qvpg = {'xrl1': 'inyhr1', 'xrl2': 'inyhr2', 'xrl3': 'inyhr3'}
 
 qrs cebprff_ahzoref():
@@ -42,20 +58,6 @@ cevag(zl_qvpg)
 cevag(zl_qvpg)
 """
 
-
-def decrypt(text, shift):
-    decrypted_text = ""
-    for char in text:
-        if char.isalpha():
-            shifted = ord(char) - shift
-            if char.islower():
-                if shifted < ord('a'):
-                    shifted += 26
-            elif char.isupper():
-                if shifted < ord('A'):
-                    shifted += 26
-            decrypted_text += chr(shifted)
-        else:
-            decrypted_text += char
-        return decrypted_text
-    
+# Decrypt using the key
+decrypted_code = decrypt(encrypted_code, 13)
+print(decrypted_code)
