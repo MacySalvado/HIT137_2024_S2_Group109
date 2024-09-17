@@ -1,7 +1,7 @@
 global_variable = 100
 my_dict = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
 
-def process_numbers():
+def process_numbers(numbers): # specify parameter here so that the function can be carried out
     global global_variable
     local_variable = 5
     numbers = [1, 2, 3, 4, 5]
@@ -14,9 +14,10 @@ def process_numbers():
     return numbers
 
 my_set = {1, 2, 3, 4, 5, 5, 4, 3, 2, 1}
+
 result = process_numbers(numbers=my_set)
 
-def modify_dict():
+def modify_dict(num): # specify num
     local_variable = 10
     my_dict['key4'] = local_variable
 
