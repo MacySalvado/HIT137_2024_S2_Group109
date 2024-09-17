@@ -1,3 +1,5 @@
+# To get the key
+
 total = 0
 for i in range(5):
     for j in range(3):
@@ -14,5 +16,8 @@ while counter < 5:
         total -= 1
     else:
         counter += 2
-        
-print(total) # total = 13
+
+# add print()  to get the result printed
+print(total)
+
+# the result for total is 13

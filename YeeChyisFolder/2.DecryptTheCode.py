@@ -1,20 +1,20 @@
 def decrypt(text, key):
-    decrypted_text = ""  # Initialise an empty string for the decrypted text
-    for char in text:  # Loop through each character in the encrypted text
-        if char.isalpha():  # Check if it's an alphabetic character
-            shifted = ord(char) - key  # Subtract the key value from the ASCII value
-            if char.islower():
-                if shifted < ord('a'):  # Wrap around if it's below 'a'
+    decrypted_text = ""     # Initialise an empty string to hold the decrypted result
+    for char in text:      # For loop. To loop through each character in the encrypted text
+        if char.isalpha():     # Check if it's alphabet
+            shifted = ord(char) - key   # Subtract the key value from the ASCII value (alternate of what we done in encryption)
+            if char.islower():     # for lowercase
+                if shifted < ord('a'):    # Wrap around if it's below 'a'
                     shifted += 26
             elif char.isupper():
                 if shifted < ord('A'):  # Wrap around if it's below 'A'
                     shifted += 26
-            decrypted_text += chr(shifted)  # Convert ASCII back to character
+            decrypted_text += chr(shifted)       # Convert ASCII back to character
         else:
-            decrypted_text += char  # Keep non-alphabet characters the same
+            decrypted_text += char       # Keep non-alphabet characters the same
     return decrypted_text
 
-# Now decrypt the encrypted code you provided
+# To decrypt the encrypted code
 encrypted_code = """tybony_inevnoyr = 100
 zl_qvpg = {'xrl1': 'inyhr1', 'xrl2': 'inyhr2', 'xrl3': 'inyhr3'}
 
@@ -58,6 +58,6 @@ cevag(zl_qvpg)
 cevag(zl_qvpg)
 """
 
-# Decrypt using the key
+# Decrypt using the key and print it out
 decrypted_code = decrypt(encrypted_code, 13)
 print(decrypted_code)
