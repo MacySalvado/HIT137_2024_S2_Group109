@@ -43,3 +43,12 @@ if correct_shift:
     print(f"The final decrypted message is: {final_decrypted_message}")
 else:
     print("Could not find a readable decrypted message.")
+
+
+# results of running the code and trying to input in the encrypted message provided in the question:
+# it works! :)
+
+# Shift 13: IM SELFISH IMPATIENT AND A LITTLE INSECURE I MAKE MISTAKES I AM OUT OF CONTROL ANDAT TIMES HARD TO HANDLE BUT IF YOU CANT HANDLE ME AT MY WORST THEN YOU SURE AS HELLDONT DESERVE ME AT MY BEST MARILYN MONROE
+
+# The correct shift value is: 13
+# The final decrypted message is: IM SELFISH IMPATIENT AND A LITTLE INSECURE I MAKE MISTAKES I AM OUT OF CONTROL ANDAT TIMES HARD TO HANDLE BUT IF YOU CANT HANDLE ME AT MY WORST THEN YOU SURE AS HELLDONT DESERVE ME AT MY BEST MARILYN MONROE

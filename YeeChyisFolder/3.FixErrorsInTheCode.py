@@ -40,3 +40,17 @@ if 5 not in my_dict:
 print(global_variable)
 print(my_dict)
 print(my_dict)
+
+
+# results of running the codes above:
+# yess, it works! :)
+# 0
+# 1
+# 2
+# 3
+# 4
+# Condition met!
+# 5 not found in the dictionary!
+# 100
+# {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 10}
+# {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 10}

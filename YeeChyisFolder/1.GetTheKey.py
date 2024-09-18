@@ -20,4 +20,6 @@ while counter < 5:
 # add print()  to get the result printed
 print(total)
 
-# the result for total is 13
+
+# the code is working! :)
+# the result for total is: 13

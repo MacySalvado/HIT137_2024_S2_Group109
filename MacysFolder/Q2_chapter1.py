@@ -41,3 +41,7 @@ try:
 
 except FileNotFoundError:
     print("The file 'chapter1.jpg' was not found. Please make sure the file is in the correct directory.")
+
+
+# please see the "chapter1out.png" we created after running the code at 10:26 PM
+# yay, it works! :)
